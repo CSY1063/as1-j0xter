@@ -9,12 +9,12 @@ body {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: bold;
     display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%; /* this is supposed to add up to 100 */
+    grid-template-columns: 20% auto 20%;
     grid-template-rows: auto;
     grid-template-areas:
         "header header header"
-        "nav nav nav"
-        "aside main main"
-        "footer footer footer";
+        "nav main aside"
+        "footer footer footer"
+    ;
     background-color: var(--backgroundColor);
 }
