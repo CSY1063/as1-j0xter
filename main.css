@@ -5,21 +5,21 @@
     --backgroundColor: #0d1117;
 }
 
+* {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+}
+
 main {
     background-color: yellow;
     grid-area: main;
-    padding-left: 1%;
+    padding: 1em;
 }
 
 header {
     background-color: red;
     grid-area: header;
-    padding-left: 1%;
-}
-
-nav {
-    background-color: green;
-    grid-area: nav;
+    padding: 1em;
 }
 
 aside {
@@ -49,4 +49,16 @@ a {
 
 p {
     color: var(--textColor);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    row-gap: 0.5em;
+    width: 100%;
+}
+
+input[type="submit"] {
+    grid-column: 1/3;
 }
