@@ -13,14 +13,18 @@ body {
 }
 
 nav {
+    box-shadow: rgba(255, 255, 255, 0.1) 0em 0em 2em;
     display: block;
-    background-color: green;
     position: fixed;
     top: 0;
     left: 50%;
     width: 50%;
     height: 100vh;
     grid-area: nav; 
+}
+
+nav ul {
+    display: block;
 }
 
 /* CLASSES */
