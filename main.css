@@ -224,6 +224,10 @@ i:hover {
     src: "images";
 }
 
+textarea {
+    resize: none;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
