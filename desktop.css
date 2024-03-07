@@ -1,33 +1,36 @@
-:root {
-    --accentColor: #00ec7e;
-}
-
 body {
     display: grid;
-    grid-template-columns: 1fr 70% 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    ". main ."
-    "footer footer footer"
-    ;
-    /* background-color: var(--backgroundColor); */
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
-nav {
-    grid-area: nav;
-    /* box-shadow: var(--accentColor) 0em 0em 5px; */
-}
-
-.navigationList {
+nav ul {
     display: flex;
+    justify-content: space-between;
+}
+
+.topNavigation {
+    display: grid;
+    float: center;
+    grid-template-columns: auto;
     justify-content: space-evenly;
-    list-style: none;
-    text-align: center;
+}
+
+.topNavigation ul {
+    display: flex;
     padding: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 1em;
+    align-items: center;
+}
+
+.topNavigation ul li {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
