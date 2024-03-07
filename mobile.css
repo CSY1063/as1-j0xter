@@ -12,9 +12,12 @@ body {
     background-color: var(--backgroundColor);
 }
 
+footer ul {
+    display: none;
+}
+
 nav {
     display: block;
-    background-color: green;
     position: fixed;
     top: 0;
     left: 50%;
@@ -23,8 +26,13 @@ nav {
     grid-area: nav; 
 }
 
+nav ul li a {
+    font-size: 1.3em;
+}
+
 /* CLASSES */
 .showNav {
+    margin: 1em 1em 1em 1em;
     height: 0.8em;
     width: 1.25em;
     display: block;

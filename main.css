@@ -11,24 +11,34 @@
     --h1Color: #00f74a;
 }
 
-body {
-    margin: 0;
-    background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(10,48,19,1) 38%, rgba(0,66,33,1) 100%);
+.pictureContainer {
+    width: 50%;
+    opacity: 1;
 }
 
-.nameTitle {
+body {
+    background: linear-gradient(153deg, rgba(0,0,0,1) 0%, #00331b 38%, #01703c 100%);
+    margin: 0;
+}
+
+header h1 {
     font-family: 'Chakra Petch';
     font-weight: bold;
     color: var(--h1Color);
+    font-size: 4em;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.subtitle {
+header h4 {
     font-family: 'Roboto Mono';
     font-weight: lighter;
     font-size: 1em;
     color: var(--textColor);
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -37,15 +47,12 @@ p {
 }
 
 main {
-    /* background-color: yellow; */
     grid-area: main;
-    padding: 1em;
 }
 
 header {
     /* background-color: red; */
     grid-area: header;
-    padding: 1em;
 }
 
 nav {
@@ -55,17 +62,22 @@ nav {
 aside {
     /* background-color: pink; */
     grid-area: aside;
-    padding-left: 5%;
 }
 
 footer {
-    /* background-color: blueviolet; */
+    background-color: var(--navColor);
     grid-area: footer;
-    padding-left: 0.5%;
+    margin: 1em 0em 0em 0em;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
 }
 
 li {
     list-style: none;
+    /* margin-right: 1em; */
 }
 
 a {
@@ -95,5 +107,23 @@ a:hover {
     text-decoration: underline;
     text-underline-position: under;
     color: var(--textHoverColor);
-    font-size: 1.2em;
+}
+
+body {
+	background: linear-gradient(-45deg, #000000, #00331b, #006e3b, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
