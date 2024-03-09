@@ -11,15 +11,21 @@
 /* vars */
 :root {
     --textClr: #fff;
-    --buttonClr: #d85374;
-    --textHoverClr: #ec0062;
-    --accentClr: #520018;
+    --buttonClr: #53d8bb;
+    --textHoverClr: #00ec9d;
+    --accentClr: #009670;
     --backgroundClr: #0d1117;
-    --navClr: #141b18;
-    --footerClr: #141b18;
-    --h1Clr: #ff315e;
-    --textShadowPrimary: #e21642;
+    --navClr: #0a0a0a;
+    --footerClr: #0a0a0a;
+    --h1Clr: #31ffba;
+    --textShadowPrimary: #16e294;
     --textShadowSecondary: #fff;
+    --borderColor: #00e297;
+
+    --grad1: #000000;
+    --grad2: #031913;
+    --grad3: #063225;
+    --grad4: #094b37;
 }
 
 
@@ -27,7 +33,7 @@
 nav {
     grid-area: nav;
     box-shadow: var(--accentClr) 0px 0px 25px;
-    
+
 
     /* marker */
     background-color: var(--navClr);
@@ -35,24 +41,20 @@ nav {
 
 body {
     margin: 0;
-    background: linear-gradient(45deg, #000000, #190307, #32060f, #4b0917);
+    background: linear-gradient(45deg, var(--grad1), var(--grad2), var(--grad3), var(--grad4));
     background-size: 400% 400%;
     animation: gradient 45s ease infinite;
 }
 
 main {
     grid-area: main;
-
-
-    /* marker */
-    /* background-color: yellow; */
 }
 
 header {
     grid-area: header;
     /* padding-left: 1%; */
 
-    
+
     /* marker */
     /* background-color: red; */
 }
@@ -62,7 +64,7 @@ header {
     padding: 0;
     margin-right: 2em;
     margin-left: 2em;
-    margin-top: 0em;
+    margin-top: 0.5em;
     margin-bottom: 0em;
     font-family: 'Chakra Petch';
     font-weight: bold;
@@ -72,8 +74,7 @@ header {
     text-shadow: 2px 2px 5px var(--textShadowPrimary);
     animation:
         makeshiftGlitch 0.2s ease-in,
-        smoothTextShadow 5s ease-in-out infinite alternate
-    ;
+        smoothTextShadow 5s ease-in-out infinite alternate;
 
 
     /* marker */
@@ -82,13 +83,13 @@ header {
 
 .aboutMe {
     margin-top: 0%;
-    color: #fff;
+    color: var(--textClr);
     font-family: 'Roboto Mono', sans-serif;
     font-weight: lighter;
     text-align: center;
     font-size: 1em;
     text-shadow: 2px 2px 20px var(--textShadowSecondary);
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 1s ease-in;
 
     /* marker */
     /* background-color: rgb(21, 255, 0); */
@@ -100,26 +101,57 @@ header {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: lighter;
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+
     font-size: 1em;
     text-shadow: 2px 2px 20px var(--textShadowSecondary);
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 1s ease-in;
 
     /* marker */
     /* background-color: rgb(21, 255, 0); */
 }
 
+.projectContainer {
+    margin: 1em;
+    background-color: var(--backgroundClr);
+    box-shadow: #3d3d3d 0px 0px 10px;
+    border: 1px solid #3d3d3d;
+}
+
+.projectContainer img {
+    margin: 1em;
+}
+
+.projectContainer h2 {
+    color: var(--textClr);
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.projectDesc {
+    margin: 1em;
+    color: var(--textClr);
+    text-shadow: 2px 2px 20px var(--textShadowSecondary);
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: lighter;
+}
+
+.projectTitle {
+    margin: 0.5em;
+    font-family: 'Chakra Petch';
+    font-weight: bold;
+    color: var(--h1Clr);
+    text-shadow: 2px 2px 5px var(--textShadowPrimary);
+}
+
 aside {
     grid-area: aside;
     padding-left: 5%;
-    overflow: hidden;
-
-    /* marker */
-    background-color: pink;
 }
 
 footer {
+    border-top: var(--borderColor) solid 2px;
+    box-shadow: var(--accentClr) 0px 0px 25px;
     grid-area: footer;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -139,15 +171,6 @@ li {
     text-decoration: none;
     text-align: center;
 }
-
-/* .footerIcons {
-    display: grid;
-    align-items: center;
-    justify-content: space-evenly;
-    float: center;
-    width: 15em;
-
-} */
 
 .footerIcons {
     display: grid;
@@ -171,7 +194,7 @@ li {
 }
 
 i {
-    color: var(--textClr);
+    color: #535353;
     font-size: 3em;
 }
 
@@ -184,23 +207,10 @@ a {
 
 /* classes */
 .profilePicture {
-    border-radius: 50%;
+    border-radius: 45%;
     display: block;
     margin: auto;
     width: 27em;
-}
-
-.pictureContainer {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 2em;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1em;
-
-
-    /* marker */
-    /* background-color: #fff; */
 }
 
 
@@ -218,10 +228,6 @@ i:hover {
     transition: 0.1s ease-in;
     transform: translate(0px, -0.1em);
     /* animation: makeshiftGlitch 0.1s ease; */
-}
-
-.profilePicture:hover {
-    src: "images";
 }
 
 textarea {
@@ -246,6 +252,7 @@ textarea {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -255,9 +262,11 @@ textarea {
     0% {
         transform: skew(25deg);
     }
+
     50% {
         transform: skew(-25deg);
     }
+
     100% {
         transform: skew(0deg);
     }

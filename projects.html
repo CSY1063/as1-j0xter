@@ -4,37 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>PORTFOLIO | OLAF DENS</title>
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+
+    <!--Font awesome-->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 
-<body id="clicked">
+<body>
     <header>
-        <!--<a class="showNav" href="#"></a>-->
         <a href="#clicked" class="showNav ON"></a>
         <a href="#" class="showNav OFF"></a>
-        <h1>OLAF DENS</h1>
-        <h4>I am a student</h4>
+        <h1 class="myName">OLAF DENS</h1>
+        <h4 class="aboutMe">These are some projects I have worked on</h4>
     </header>
 
     <nav>
-        <ul class="navigationList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="video.html">Demo</a></li>
-            <li><a href="report.html">Report</a></li>
-        </ul>
+        <div class="topNavigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="video.html">DEMO</a></li>
+                <li><a href="report.html">REPORT</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <div class="projectContainerRoot">
-            <div class="projectContainer">Project 1</div>
-            <div class="projectContainer">Project 2</div>
-            <div class="projectContainer">Project 3</div>
-            <div class="projectContainer">Project 4</div>
+    <main class="myProjects">
+        <div class="projectContainer">
+            <h1 class="projectTitle">PROJECT TITLE</h1>
+            <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur nulla omnis maiores libero voluptas sequi. Eaque nihil quidem consectetur nulla illo, ut amet cum saepe repellendus? Expedita, enim fugiat.</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+        <div class="projectContainer">
+            <h1 class="projectTitle">PROJECT TITLE</h1>
+            <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur nulla omnis maiores libero voluptas sequi. Eaque nihil quidem consectetur nulla illo, ut amet cum saepe repellendus? Expedita, enim fugiat.</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+        <div class="projectContainer">
+            <h1 class="projectTitle">PROJECT TITLE</h1>
+            <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur nulla omnis maiores libero voluptas sequi. Eaque nihil quidem consectetur nulla illo, ut amet cum saepe repellendus? Expedita, enim fugiat.</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+        <div class="projectContainer">
+            <h1 class="projectTitle">PROJECT TITLE</h1>
+            <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur nulla omnis maiores libero voluptas sequi. Eaque nihil quidem consectetur nulla illo, ut amet cum saepe repellendus? Expedita, enim fugiat.</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
         </div>
     </main>
 
@@ -42,18 +66,20 @@
     </aside>
 
     <footer>
-        <ul>
-            <li><a href="#"></a></li>
+        <ul class="footerNav">
+
         </ul>
-        <ul class="navigationList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="video.html">Demo</a></li>
-            <li><a href="report.html">Report</a></li>
-        </ul>
-        <p>&copy; OLAF DENS 2024</p>
+        <div class="footerIcons">
+            <ul>
+                <li><i class="fa-brands fa-square-github"></i></li>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-x-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-square-steam"></i></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; Olaf Dens 2024</p>
     </footer>
 </body>
 
-</html> 
+</html>

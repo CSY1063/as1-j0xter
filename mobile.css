@@ -1,3 +1,8 @@
+:root {
+    --backgroundClr: #0d1117;
+    --borderColor: #00e297;
+}
+
 body {
     display: grid;
     grid-template-columns: 100%;
@@ -23,14 +28,19 @@ nav {
     left: 50%;
     width: 50%;
     height: 100vh;
-    grid-area: nav; 
+    grid-area: nav;
+    border-left: var(--borderColor) solid 2px;
 }
 
 nav ul li a {
     font-size: 1.3em;
 }
 
-/* CLASSES */
+.subtitle {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .showNav {
     margin: 1% 1% 1% 1%;
     height: 0.8em;
@@ -38,6 +48,21 @@ nav ul li a {
     display: block;
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
+}
+
+.topNavigation ul {
+    padding: 0;
+    margin: 1em;
+    align-items: center;
+}
+
+.topNavigation ul li {
+    height: 3em;
+}
+
+.myProjects {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
 }
 
 .showNav::before {
@@ -66,11 +91,4 @@ nav ul li a {
 
 #clicked:target nav{
     display: none;
-}
-
-.projectContainerRoot {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 2em;
-    justify-content: space-around;
 }

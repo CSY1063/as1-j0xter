@@ -1,6 +1,11 @@
+:root {
+    --accentClr: #009670;
+    --borderColor: #00e297;
+}
+
 body {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "nav nav nav"
@@ -19,6 +24,7 @@ nav ul {
     float: center;
     grid-template-columns: auto;
     justify-content: space-evenly;
+    border-bottom: var(--borderColor) solid 2px;
 }
 
 .topNavigation ul {
@@ -33,4 +39,21 @@ nav ul {
     padding-bottom: 0%;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.myProjects {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.projectContainer:hover {
+    transform: translate(0, -1em);
+    transition: 0.1s ease-in;
+    box-shadow: var(--accentClr) 0px 0px 10px;
+    border: 1px solid var(--borderColor);
+}
+
+.subtitle {
+    padding-left: 20%;
+    padding-right: 20%;
 }
