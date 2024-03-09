@@ -1,6 +1,7 @@
 :root {
     --backgroundClr: #0d1117;
     --borderColor: #00e297;
+    --navTransitionSpeed: 0.5s;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
     background-color: var(--backgroundColor);
 }
 
+.footerIcons {
+    margin-top: 1em;
+}
+
 footer ul {
     display: none;
 }
@@ -25,11 +30,14 @@ nav {
     display: block;
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 100%;
     width: 50%;
     height: 100vh;
     grid-area: nav;
     border-left: var(--borderColor) solid 2px;
+    box-shadow: var(--accentClr) 0px 0px 0px;
+    z-index: 2;
+    transition: var(--navTransitionSpeed) ease-in;
 }
 
 nav ul li a {
@@ -42,7 +50,7 @@ nav ul li a {
 }
 
 .showNav {
-    margin: 1% 1% 1% 1%;
+    margin: 1%;
     height: 0.8em;
     width: 1.25em;
     display: block;
@@ -90,5 +98,8 @@ nav ul li a {
 }
 
 #clicked:target nav{
-    display: none;
+    /* display: none; */
+    left: 50%;
+    box-shadow: var(--accentClr) 0px 0px 25px;
+    transition: var(--navTransitionSpeed) ease;
 }

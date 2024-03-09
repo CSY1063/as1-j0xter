@@ -19,12 +19,12 @@
     />
 </head>
 
-<body>
+<body id="clicked">
     <header>
         <a href="#clicked" class="showNav ON"></a>
         <a href="#" class="showNav OFF"></a>
         <h1 class="myName">OLAF DENS</h1>
-        <h4 class="aboutMe">Software Engineering Student at the University of Northampton</h4>
+        <h4 class="aboutMe">Get in touch with me</h4>
     </header>
 
     <nav>
@@ -39,18 +39,17 @@
         </div>
     </nav>
 
-    <main>
-        <div class="pictureContainer">
-            <img class="profilePicture" src="images/lol_mask.png" alt="bitmoji of person with laughing mask">
-        </div>
-        <h4 class="subtitle">
-            Worked for NASA in 2011 and I am currently studying at the University of Northampton, doing a Software
-            Engineering degree and whatnot.
+    <main class="contactContainer">
+        <form action="mailto:olaf.dens23@my.northampton.ac.uk" method="get" class="contactForm">
+            <label for="name" class="formLabel">Enter your name*</label>
+            <input type="text" name="name" class="formInput" required>
+            <label for="email" class="formLabel">Enter your email*</label>
+            <input type="text" name="name" class="formInput" required>
+            <label for="message" class="formLabel">Message*</label>
+            <textarea name="messageBox" class="formMessage"></textarea>
 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur, velit quae exercitationem
-            maiores similique libero eveniet quos quidem impedit nihil odio quam adipisci necessitatibus labore,
-            delectus, facilis aperiam assumenda!
-        </h4>
+            <input type="submit" value="Submit">
+        </form>
     </main>
 
     <aside>
