@@ -1,6 +1,7 @@
 :root {
     --accentClr: #009670;
     --borderColor: #00e297;
+    --textHoverClr: #00ec9d;
 }
 
 body {
@@ -44,6 +45,13 @@ nav ul {
     padding-right: 2em;
 }
 
+.reportContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em;
+    width: 60%;
+}
+
 .myProjects {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -59,4 +67,19 @@ nav ul {
 .subtitle {
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.valScreenshots {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+input[type="submit"]:hover {
+    transition: 0.2s ease;
+    color: var(--textHoverClr);
+}
+
+.validationImg:hover {
+    transition: 0.2s ease;
+    transform: translate(0px, -0.5em);
 }

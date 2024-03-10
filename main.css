@@ -72,13 +72,17 @@ header {
 }
 
 input[type="submit"] {
+    transition: 0.2s ease;
     margin-bottom: 1em;
-    background-color: #009670;
-    border-color: var(--borderColor);
+    border-radius: 50px;
+    background-color: var(--textHoverClr);
     font-family: 'Inconsolata', sans-serif;
     font-weight: bold;
-    color: var(--textClr);
+    color: #000;
     height: 2em;
+    border: 0;
+    font-size: 1.2em;
+    box-shadow: var(--accentClr) 0px 0px 25px;
 }
 
 .formInput {
@@ -109,16 +113,6 @@ input[type="submit"] {
     border: 1px solid var(--borderColor);
 }
 
-.reportContainer {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2em;
-    width: 70%;
-    margin-bottom: 2em;
-    box-shadow: rgb(24, 24, 24) 0px 0px 25px;
-}
-
 .videoContainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -129,10 +123,38 @@ input[type="submit"] {
     justify-content: center;
 }
 
+
+.reportContainer {
+    background-color: white;
+    margin-bottom: 4em;
+    box-shadow: rgb(122, 122, 122) 0px 0px 25px;
+}
+
+.reportHeader {
+    font-family: 'Roboto', sans-serif;
+}
+
+.reportImage {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px 0px 25px;
+}
+
 .reportText {
     margin: 0;
     padding: 0.1em;
     font-family:'Lucida Sans', sans-serif;
+}
+
+.imgContainer {
+    margin: 0.5em;
+}
+
+.validationImg {
+    transition: 0.2s ease;
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px 0px 12px;
 }
 
 iframe {
@@ -201,10 +223,12 @@ iframe {
 }
 
 .projectContainer {
+    transition: 0.2s ease;
     margin: 1em;
     background-color: var(--backgroundClr);
     box-shadow: #3d3d3d 0px 0px 10px;
     border: 1px solid #3d3d3d;
+    border-radius: 8px;
 }
 
 .projectContainer img {
@@ -283,11 +307,13 @@ li {
 }
 
 i {
+    transition: 0.2s ease;
     color: #535353;
     font-size: 3em;
 }
 
 a {
+    transition: 0.5s ease;
     font-family: 'Chakra Petch';
     font-weight: bold;
     color: var(--textClr);
@@ -308,7 +334,7 @@ a:hover {
     text-decoration: underline;
     text-underline-position: under;
     color: var(--textHoverClr);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     transition: 0.5s;
 }
 

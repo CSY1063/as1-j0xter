@@ -22,6 +22,13 @@ body {
     margin-top: 1em;
 }
 
+.reportContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    width: 80%;
+}
+
 footer ul {
     display: none;
 }
@@ -69,6 +76,11 @@ nav ul li a {
 }
 
 .myProjects {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.valScreenshots {
     display: grid;
     grid-template-columns: repeat(1, auto);
 }
