@@ -86,6 +86,9 @@ nav ul li a {
     margin-left: 2em;
  }
  
+ .videoFooter {
+    margin-top: 30%;
+ }
 
 /* hamburger menu stuff */
 .showNav {
