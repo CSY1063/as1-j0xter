@@ -15,6 +15,12 @@ body {
         "footer footer footer";
 }
 
+.demoContainer {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30%;
+}
+
 nav {
     box-shadow: var(--accentClr) 0px 0px 25px;
 }
@@ -52,6 +58,10 @@ nav ul {
     width: 60%;
 }
 
+.contactContainer {
+    width: 30%;
+}
+
 .myProjects {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -65,6 +75,7 @@ nav ul {
 }
 
 .subtitle {
+    margin-bottom: 4em;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -74,12 +85,25 @@ nav ul {
     grid-template-columns: repeat(4, auto);
 }
 
+input[type="submit"] {
+    width: 50%;
+    max-width: 30%;
+}
+
 input[type="submit"]:hover {
     transition: 0.2s ease;
-    color: var(--textHoverClr);
+    /* color: var(--accentClr); */
+    box-shadow: var(--accentClr) 0px 0px 25px;
 }
 
 .validationImg:hover {
     transition: 0.2s ease;
     transform: translate(0px, -0.5em);
+}
+
+i:hover {
+    color: var(--textHoverClr);
+    transition: 0.1s ease-in;
+    transform: translate(0px, -0.1em);
+    /* animation: makeshiftGlitch 0.1s ease; */
 }
