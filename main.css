@@ -106,9 +106,18 @@ input[type="submit"] {
 }
 
 .videoUrl {
+    font-size: 1.5rem;
     text-align: center;
-    background-color: yellow;
-    width: 100%;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 2px 2px 20px var(--textShadowSecondary);
+}
+
+.urlContainer {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
 }
 
 .reportContainer {
@@ -118,8 +127,9 @@ input[type="submit"] {
 }
 
 .demoContainer {
-    background-color: yellow;
     height: 80%;
+    background-color: var(--backgroundClr);
+    box-shadow: var(--accentClr) 0px 0px 25px;
 }
 
 .demoContainer iframe {
