@@ -111,3 +111,11 @@ i:hover {
     transform: translate(0px, -0.1em);
     /* animation: makeshiftGlitch 0.1s ease; */
 }
+
+a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--textHoverClr);
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+}

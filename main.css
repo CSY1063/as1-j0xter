@@ -36,6 +36,9 @@ body {
     background: linear-gradient(45deg, var(--grad1), var(--grad2), var(--grad3), var(--grad4));
     background-size: 400% 400%;
     animation: gradient 45s ease infinite;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
 }
 
 main {
@@ -128,13 +131,14 @@ input[type="submit"] {
 
 .demoContainer {
     height: 80%;
-    background-color: var(--backgroundClr);
-    box-shadow: var(--accentClr) 0px 0px 25px;
 }
 
 .demoContainer iframe {
     width: 100%;
     height: 100%;
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    box-shadow: var(--accentClr) 0px 0px 25px;
 }
 
 .reportHeader {
@@ -152,6 +156,11 @@ input[type="submit"] {
     margin: 0;
     padding: 0.1em;
     font-family:'Lucida Sans', sans-serif;
+}
+
+.highlightedText {
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .imgContainer {
@@ -253,7 +262,6 @@ footer {
     grid-area: footer;
     padding-left: 0.5%;
     padding-right: 0.5%;
-
     background-color: var(--footerClr);
 }
 
@@ -309,14 +317,6 @@ a {
     display: block;
     margin: auto;
     width: 27em;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-underline-position: under;
-    color: var(--textHoverClr);
-    letter-spacing: 0.2em;
-    transition: 0.5s;
 }
 
 textarea {

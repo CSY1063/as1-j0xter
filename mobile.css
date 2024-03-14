@@ -36,20 +36,6 @@ footer ul {
     display: none;
 }
 
-nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 50%;
-    height: 100vh;
-    grid-area: nav;
-    border-left: var(--borderColor) solid 2px;
-    box-shadow: var(--accentClr) 0px 0px 0px;
-    z-index: 2;
-    transition: var(--navTransitionSpeed) ease-in;
-}
-
 nav ul li a {
     font-size: 1.3em;
 }
@@ -91,6 +77,20 @@ nav ul li a {
  }
 
 /* hamburger menu stuff */
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100vh;
+    grid-area: nav;
+    border-left: var(--borderColor) solid 2px;
+    box-shadow: var(--accentClr) 0px 0px 0px;
+    z-index: 2;
+    transition: var(--navTransitionSpeed) ease-in;
+}
+
 .showNav {
     margin: 1%;
     height: 0.8em;
