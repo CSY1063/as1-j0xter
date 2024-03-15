@@ -312,6 +312,11 @@ a {
     text-decoration: none;
 }
 
+.demoLink {
+    color: black;
+    font-family:'Roboto', sans-serif;
+}
+
 .profilePicture {
     border-radius: 45%;
     display: block;
